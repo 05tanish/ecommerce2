@@ -1,0 +1,47 @@
+.profile-page {
+    padding: 120px 20px 60px;
+    max-width: 1000px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.profile-card {
+    padding: 32px;
+}
+
+.profile-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.profile-card .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-card label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.profile-card .form-control:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+@media (max-width: 868px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
